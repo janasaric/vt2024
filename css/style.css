@@ -5,6 +5,7 @@
     display: grid;
     grid-template-areas: 'hd'
     'main'
+    'sc'
     'ft';
 }
 
@@ -54,16 +55,42 @@ nav ul li:hover {
 main {
     grid-area: main;
     background-color:rgb(255, 178, 178);
+    text-align: center;
+    font-size: 40px;
 }
+
+#section1 {
+    grid-area: sc;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-around; 
+    border: solid 1px;
+    width: 80%;
+    margin:auto;
+    
+}
+
+#section1 * {
+    box-sizing: border-box;
+    border: solid 1px black; 
+    
+}
+
 
 footer {
     grid-area: ft;
     background-color: rgb(255, 202, 202);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 3px;
 }
 
 @media screen and (max-width:600px) {
     body {
-        background-color: rgb(252, 201, 172);
+        background-color: rgb(255, 255, 255);
     }
 
     header {
