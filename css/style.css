@@ -6,7 +6,7 @@
     grid-template-areas: 'hd'
     'main'
     'sc'
-    'pr'
+    'tb'
     'ft';
 }
 
@@ -95,6 +95,12 @@ main {
     display: flex;
     flex-direction: row;
     text-align: end;
+}
+
+table {
+    grid-area: tb;
+    border: 1px solid black;
+    margin: 10px;
 }
 
 footer {
